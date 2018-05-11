@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>bigtable</name>
+		<value>insert into pro_bigtable values(?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE adduserCount = ?,visitCount = ?,userCount = ?,addmemberCount = ?,activeCount = ?,memberCount = ?,sessionnumberCount = ?,sessionlengthCount = ?,averagesessionlength = ?</value>
+	</property>
+	
+	<property>
+		<name>bigtablebrowser</name>
+		<value>insert into pro_bigtablebrowser values(?,?,?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE adduserCount = ?,visitCount = ?,userCount = ?,addmemberCount = ?,activeCount = ?,memberCount = ?,sessionnumberCount = ?,sessionlengthdvalue = ?,sessionlengthCount = ?,averagesessionLength  = ?,browserPv = ?</value>
+	</property>
+	
+	<property>
+		<name>region</name>
+		<value>insert into pro_region values(?,?,?,?,?,?) ON DUPLICATE KEY UPDATE regioncount = ?, sessionnumber = ?,sessionjumpnumber = ?, jumprate = ?</value>
+	</property>
+	
+	<property>
+		<name>visitdepth</name>
+		<value>insert into pro_visitdepth values(?,?,?) ON DUPLICATE KEY UPDATE count = ?</value>
+	</property>
+	
+	<property>
+		<name>order</name>
+		<value>insert into pro_order values(?,?,?,?,?,?) ON DUPLICATE KEY UPDATE oid = ?,successCount = ?,refundCount = ?,orderNumber = ?,orderCount = ?</value>
+	</property>
+	
+	<property>
+		<name>externallink</name>
+		<value>insert into pro_externallink values(?,?,?,?,?) ON DUPLICATE KEY UPDATE external = ?,externalJump = ?,jumpRate = ?</value>
+	</property>
+	
+	<property>
+		<name>year</name>
+		<value>insert into rea_year values(?,?) ON DUPLICATE KEY UPDATE amount = ?</value>
+	</property>
+	
+	<property>
+		<name>mounth</name>
+		<value>insert into rea_mounth values(?,?) ON DUPLICATE KEY UPDATE amount = ?</value>
+	</property>
+	
+	<property>
+		<name>day</name>
+		<value>insert into rea_day values(?,?) ON DUPLICATE KEY UPDATE amount = ?</value>
+	</property>
+	
+	<property>
+		<name>type</name>
+		<value>insert into rea_type values(?,?) ON DUPLICATE KEY UPDATE count = ?</value>
+	</property>
+	
+	<property>
+		<name>rea_region</name>
+		<value>insert into rea_region values(?,?) ON DUPLICATE KEY UPDATE count = ?</value>
+	</property>
+	
+	<property>
+		<name>housing</name>
+		<value>insert into rea_housing values(?,?) ON DUPLICATE KEY UPDATE count = ?</value>
+	</property>
+	
+	<property>
+		<name>area</name>
+		<value>insert into rea_area values(?,?) ON DUPLICATE KEY UPDATE count = ?</value>
+	</property>
+	
+</configuration>

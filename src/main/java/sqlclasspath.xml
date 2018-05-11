@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	
+	<property>
+		<name>VisitCount</name>
+		<value>com.oracle.project.sql.imp.VisitCount</value>
+	</property>
+	
+	<property>
+		<name>ActiveCount</name>
+		<value>com.oracle.project.sql.imp.ActiveCount</value>
+	</property>
+
+</configuration>
